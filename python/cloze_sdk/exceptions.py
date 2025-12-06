@@ -22,6 +22,14 @@ class ClozeAPIError(Exception):
     """Base exception for all Cloze API errors."""
 
     def __init__(self, message, errorcode=None, response=None):
+        """
+        Initialize Cloze API error.
+
+        Args:
+            message: Error message
+            errorcode: Optional API error code
+            response: Optional response object from the API
+        """
         super().__init__(message)
         self.errorcode = errorcode
         self.response = response
