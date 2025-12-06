@@ -17,9 +17,12 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
+from typing import Any, Dict, Optional
+
 import requests
-from typing import Optional, Dict, Any
-from .exceptions import ClozeAPIError, ClozeAuthenticationError, ClozeRateLimitError
+
+from .exceptions import (ClozeAPIError, ClozeAuthenticationError,
+                         ClozeRateLimitError)
 
 
 class ClozeClient:
@@ -56,12 +59,12 @@ class ClozeClient:
         self._setup_session()
 
         # Initialize endpoint modules
-        from .analytics import Analytics
-        from .team import Team
         from .account import Account
-        from .projects import Projects
-        from .people import People
+        from .analytics import Analytics
         from .companies import Companies
+        from .people import People
+        from .projects import Projects
+        from .team import Team
         from .timeline import Timeline
         from .webhooks import Webhooks
 

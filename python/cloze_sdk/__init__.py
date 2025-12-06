@@ -20,7 +20,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 from .client import ClozeClient
-from .exceptions import ClozeAPIError, ClozeAuthenticationError, ClozeRateLimitError
+from .exceptions import (ClozeAPIError, ClozeAuthenticationError,
+                         ClozeRateLimitError)
 
 __version__ = "1.0.0"
 __all__ = [
