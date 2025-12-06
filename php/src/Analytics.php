@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Analytics
 {
     private $client;
@@ -119,4 +120,3 @@ class Analytics
         return $this->client->makeRequest('GET', '/v1/analytics/teamactivity/update');
     }
 }
-

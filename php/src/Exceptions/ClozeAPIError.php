@@ -46,4 +46,3 @@ class ClozeAPIError extends \Exception
         return $this->response;
     }
 }
-

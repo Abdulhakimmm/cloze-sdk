@@ -20,7 +20,7 @@
  */
 
 namespace Cloze\SDK\Exceptions;
+
 class ClozeRateLimitError extends ClozeAPIError
 {
 }
-

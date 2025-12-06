@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Account
 {
     private $client;
@@ -115,4 +116,3 @@ class Account
         return $this->client->makeRequest('GET', '/v1/user/views');
     }
 }
-

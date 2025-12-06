@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Projects
 {
     private $client;
@@ -153,4 +154,3 @@ class Projects
         return $this->client->makeRequest('GET', '/v1/projects/feed', $params);
     }
 }
-

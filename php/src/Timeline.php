@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Timeline
 {
     private $client;
@@ -97,4 +98,3 @@ class Timeline
         return $this->client->makeRequest('GET', '/v1/messages/opens', $params);
     }
 }
-

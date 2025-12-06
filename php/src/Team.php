@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Team
 {
     private $client;
@@ -75,4 +76,3 @@ class Team
         return $this->client->makeRequest('GET', '/v1/team/roles');
     }
 }
-

@@ -22,6 +22,7 @@
 namespace Cloze\SDK;
 
 use Cloze\SDK\Exceptions\ClozeValidationError;
+
 class Webhooks
 {
     private $client;
@@ -116,4 +117,3 @@ class Webhooks
         return $this->client->makeRequest('POST', '/v1/webhooks/unsubscribe', null, $subscription);
     }
 }
-

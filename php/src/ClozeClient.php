@@ -28,10 +28,11 @@ use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
+
 class ClozeClient
 {
-    const BASE_URL = 'https://api.cloze.com';
-    const API_VERSION = '2025.10';
+    public const BASE_URL = 'https://api.cloze.com';
+    public const API_VERSION = '2025.10';
 
     private $apiKey;
     private $oauthToken;
@@ -201,4 +202,3 @@ class ClozeClient
         return $data;
     }
 }
-

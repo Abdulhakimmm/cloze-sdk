@@ -20,6 +20,7 @@
  */
 
 namespace Cloze\SDK;
+
 class Companies
 {
     private $client;
@@ -153,4 +154,3 @@ class Companies
         return $this->client->makeRequest('GET', '/v1/companies/feed', $params);
     }
 }
-
