@@ -38,7 +38,12 @@ class People
      */
     public function create(array $person): array
     {
-        return $this->client->makeRequest('POST', '/v1/people/create', null, $person);
+        // Filter out null values as they may cause issues with the API
+        $personClean = array_filter($person, function ($value) {
+            return $value !== null;
+        });
+        // Wrap in 'person' key as required by the API
+        return $this->client->makeRequest('POST', '/v1/people/create', null, ['person' => $personClean]);
     }
 
     /**
@@ -49,7 +54,12 @@ class People
      */
     public function update(array $person): array
     {
-        return $this->client->makeRequest('POST', '/v1/people/update', null, $person);
+        // Filter out null values as they may cause issues with the API
+        $personClean = array_filter($person, function ($value) {
+            return $value !== null;
+        });
+        // Wrap in 'person' key as required by the API
+        return $this->client->makeRequest('POST', '/v1/people/update', null, ['person' => $personClean]);
     }
 
     /**

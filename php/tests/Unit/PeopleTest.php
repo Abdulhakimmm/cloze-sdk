@@ -17,7 +17,7 @@ class PeopleTest extends TestCase
         $person = ['email' => 'test@example.com', 'first' => 'Test'];
         $client->expects($this->once())
             ->method('makeRequest')
-            ->with('POST', '/v1/people/create', null, $person)
+            ->with('POST', '/v1/people/create', null, ['person' => $person])
             ->willReturn(['errorcode' => 0]);
         
         $this->getPeople($client)->create($person);
@@ -29,7 +29,33 @@ class PeopleTest extends TestCase
         $person = ['email' => 'test@example.com'];
         $client->expects($this->once())
             ->method('makeRequest')
-            ->with('POST', '/v1/people/update', null, $person)
+            ->with('POST', '/v1/people/update', null, ['person' => $person])
+            ->willReturn(['errorcode' => 0]);
+        
+        $this->getPeople($client)->update($person);
+    }
+
+    public function testCreateFiltersNullValues(): void
+    {
+        $client = $this->createMockClient(['makeRequest']);
+        $person = ['email' => 'test@example.com', 'first' => 'Test', 'title' => null];
+        $expected = ['person' => ['email' => 'test@example.com', 'first' => 'Test']];
+        $client->expects($this->once())
+            ->method('makeRequest')
+            ->with('POST', '/v1/people/create', null, $expected)
+            ->willReturn(['errorcode' => 0]);
+        
+        $this->getPeople($client)->create($person);
+    }
+
+    public function testUpdateFiltersNullValues(): void
+    {
+        $client = $this->createMockClient(['makeRequest']);
+        $person = ['email' => 'test@example.com', 'first' => null, 'last' => 'User'];
+        $expected = ['person' => ['email' => 'test@example.com', 'last' => 'User']];
+        $client->expects($this->once())
+            ->method('makeRequest')
+            ->with('POST', '/v1/people/update', null, $expected)
             ->willReturn(['errorcode' => 0]);
         
         $this->getPeople($client)->update($person);
