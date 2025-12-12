@@ -19,10 +19,12 @@ class TestPeople:
             
             result = people.create(sample_person)
             
+            # API expects data directly, not wrapped in "person" key (per Cloze support)
+            expected_data = {k: v for k, v in sample_person.items() if v is not None}
             mock_request.assert_called_once_with(
                 "POST",
                 "/v1/people/create",
-                json_data=sample_person
+                json_data=expected_data
             )
             assert result == {"errorcode": 0}
     
@@ -33,10 +35,12 @@ class TestPeople:
             
             result = people.update(sample_person)
             
+            # API expects data directly, not wrapped in "person" key (per Cloze support)
+            expected_data = {k: v for k, v in sample_person.items() if v is not None}
             mock_request.assert_called_once_with(
                 "POST",
                 "/v1/people/update",
-                json_data=sample_person
+                json_data=expected_data
             )
             assert result == {"errorcode": 0}
     

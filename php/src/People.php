@@ -42,8 +42,8 @@ class People
         $personClean = array_filter($person, function ($value) {
             return $value !== null;
         });
-        // Wrap in 'person' key as required by the API
-        return $this->client->makeRequest('POST', '/v1/people/create', null, ['person' => $personClean]);
+        // Note: API expects data directly, NOT wrapped in "person" key (per Cloze support)
+        return $this->client->makeRequest('POST', '/v1/people/create', null, $personClean);
     }
 
     /**
@@ -58,8 +58,8 @@ class People
         $personClean = array_filter($person, function ($value) {
             return $value !== null;
         });
-        // Wrap in 'person' key as required by the API
-        return $this->client->makeRequest('POST', '/v1/people/update', null, ['person' => $personClean]);
+        // Note: API expects data directly, NOT wrapped in "person" key (per Cloze support)
+        return $this->client->makeRequest('POST', '/v1/people/update', null, $personClean);
     }
 
     /**

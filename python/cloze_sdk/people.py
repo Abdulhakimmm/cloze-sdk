@@ -38,7 +38,8 @@ class People:
         """
         # Filter out None values as they may cause issues with the API
         person_clean = {k: v for k, v in person.items() if v is not None}
-        return self.client._make_request("POST", "/v1/people/create", json_data={"person": person_clean})
+        # Note: API expects data directly, NOT wrapped in "person" key (per Cloze support)
+        return self.client._make_request("POST", "/v1/people/create", json_data=person_clean)
 
     def update(self, person: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -52,7 +53,8 @@ class People:
         """
         # Filter out None values as they may cause issues with the API
         person_clean = {k: v for k, v in person.items() if v is not None}
-        return self.client._make_request("POST", "/v1/people/update", json_data={"person": person_clean})
+        # Note: API expects data directly, NOT wrapped in "person" key (per Cloze support)
+        return self.client._make_request("POST", "/v1/people/update", json_data=person_clean)
 
     def get(
         self, identifier: str, identifier_type: Optional[str] = None
